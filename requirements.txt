@@ -1,5 +1,5 @@
 altair==5.5.0
-hmac==0.3.0
+hmac
 numpy==2.0.0
 streamlit==1.36.0
 streamlit-extras==0.4.3
