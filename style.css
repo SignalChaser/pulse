@@ -1,0 +1,149 @@
+section[data-testid='stSidebar'] {
+    background-color: #0f1116;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 10px;
+    white-space: nowrap;
+}
+
+header[data-testid="stHeader"] {
+    display: none;
+}
+
+.streamlit-container, 
+.stApp {
+    padding: 0;
+    margin: 0;
+}
+
+[data-testid="stAppViewContainer"] {
+    padding: 10px;
+    margin: 0;
+}
+
+h1 {
+    color: white;
+}
+
+p1 {
+    color: white;
+}
+
+[data-testid="stTextInput"] input,
+[data-testid="stDateInput"] input,
+[data-baseweb="select"] {
+    background: #0f1116;
+    color: #ffffff;
+    border: 2px solid #1d2cf3;
+    border-radius: 0px;
+    outline: none;
+}
+
+button[kind="primary"] {
+    background-color: #1d2cf3;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 0px;
+    outline: none;
+    box-sizing: border-box;
+    width: 100% !important; 
+
+}
+
+button[kind="primary"]:hover {
+    background-color: #1d2cf3;
+    color: #ffffff;
+    border-color: #ffffff;
+    box-shadow: 0 0 30px #1d2cf3;
+}
+
+.hr-opacity {
+    opacity: 0.8;
+}
+
+@media (max-width: 599px) {
+    section[data-testid='stSidebar'] {
+        width: 60px !important;
+    }
+    
+    h1, 
+    p1 { 
+        font-size: 18px; 
+    }
+    
+    [data-testid="stDateInput"] input,
+    [data-baseweb="select"],
+    button[kind="primary"] {
+        height: 40px;
+        font-size: 10px;
+        padding: 7px;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 769px) {
+    section[data-testid='stSidebar'] {
+        width: 95px !important;
+    }
+    
+    h1, 
+    p1 { 
+        font-size: 20px; 
+    }
+    
+    [data-testid="stDateInput"] input,
+    [data-baseweb="select"],
+    button[kind="primary"] {
+        height: 50px;
+        font-size: 12px;
+        padding: 9px;
+    }
+}
+
+@media (min-width: 770px) {
+    section[data-testid='stSidebar'] {
+        width: 250px !important;
+    }
+    
+    h1 { 
+        font-size: 28px; 
+    }
+    
+    p1 { 
+        font-size: 16px; 
+    }
+    
+    [data-testid="stDateInput"] input,
+    [data-baseweb="select"] {
+        height: 80px;
+        font-size: 16px;
+        padding: 14px;
+    }
+    
+    button[kind="primary"] {
+        height: 80px;
+        font-size: 24px;
+        padding: 14px;
+        margin: 25px 0;
+    }
+}
+
+.vertical-line {
+    border-left: 0.5px solid grey; /* Adjust thickness and color as needed */
+    height: 700px; /* Adjust height as needed */
+    margin: 0 40px; /* Adjust margin as needed */
+    opacity: 0.2;
+}
+
+/* Specific styles for the special select box */
+.custom-special-select {
+    background: #ffffff; /* Different background color */
+    color: #000000; /* Different text color */
+}
+
+[data-testid="stPopover"]:hover {
+    color: #ffffff;
+}
