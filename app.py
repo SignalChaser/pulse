@@ -1,5 +1,3 @@
-from supabase.client import ClientOptions
-from supabase import create_client
 import streamlit as st
 import altair as alt
 import numpy as np
